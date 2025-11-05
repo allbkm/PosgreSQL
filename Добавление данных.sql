@@ -12,12 +12,12 @@ INSERT INTO Performers (performerid, name) VALUES
 (6, 'Jhon');
 
 INSERT INTO Performer_Genres (performerid, genreid) VALUES
-(1, 1), -- Александр Копытов -> Рок
-(2, 2), -- Виктор Цой -> Блюз
-(3, 3), -- Игорь Дакота -> Джаз
-(4, 1), -- Евгений Маргулис -> Рок
-(5, 2), -- Bob -> Блюз
-(6, 3); -- Jhon -> Джаз
+(1, 1),
+(2, 2), 
+(3, 3), 
+(4, 1), 
+(5, 2), 
+(6, 3); 
 
 INSERT INTO Albums (albumid, name, year) VALUES
 (1, 'Альбом_1', 1990),
@@ -29,22 +29,22 @@ INSERT INTO Albums (albumid, name, year) VALUES
 (7, 'Альбом_7', 2020);
 
 INSERT INTO Album_Performers (albumid, performerid) VALUES
-(1, 1), -- Альбом_1 -> Александр Копытов
-(2, 2), -- Альбом_2 -> Виктор Цой
-(3, 3), -- Альбом_3 -> Игорь Дакота
-(4, 4), -- Альбом_4 -> Евгений Маргулис
-(5, 5), -- Альбом_5 -> Bob
-(6, 6), -- Альбом_6 -> Jhon
-(7, 3); -- Альбом_7 -> Игорь Дакота
+(1, 1),
+(2, 2), 
+(3, 3), 
+(4, 4), 
+(5, 5),
+(6, 6),
+(7, 3); 
 
 INSERT INTO Tracks (trackid, name, albumid, duration) VALUES
-(1, 'Track_1', 1, 180),   -- 3 минуты = 180 секунд
-(2, 'Track_2', 2, 120),   -- 2 минуты = 120 секунд
-(3, 'Track_3', 3, 240),   -- 4 минуты = 240 секунд
-(4, 'Track_4', 4, 300),   -- 5 минут = 300 секунд
-(5, 'Track_5', 1, 120),   -- 2 минуты = 120 секунд
-(6, 'Track_6', 2, 240),   -- 4 минуты = 240 секунд
-(7, 'My Word', 3, 300);   -- 5 минут = 300 секунд
+(1, 'Track_1', 1, 180), 
+(2, 'Track_2', 2, 120), 
+(3, 'Track_3', 3, 240),  
+(4, 'Track_4', 4, 300),  
+(5, 'Track_5', 1, 120),  
+(6, 'Track_6', 2, 240),  
+(7, 'My Word', 3, 300);  
 
 INSERT INTO Compilations (compilationid, name, release_year) VALUES
 (1, 'Сборник_1', 2014),
@@ -55,10 +55,10 @@ INSERT INTO Compilations (compilationid, name, release_year) VALUES
 (6, 'Сборник_6', 2019);
 
 INSERT INTO Compilation_Tracks (compilationid, trackid) VALUES
-(1, 7), -- Сборник_1 -> My Word
-(2, 2), -- Сборник_2 -> Track_2
-(5, 3), -- Сборник_5 -> Track_3
-(4, 4), -- Сборник_4 -> Track_4
-(5, 5), -- Сборник_5 -> Track_5
-(6, 6), -- Сборник_6 -> Track_6
-(5, 1); -- Сборник_5 -> Track_1
+(1, 7), 
+(2, 2), 
+(5, 3),
+(4, 4), 
+(5, 5), 
+(6, 6), 
+(5, 1);
