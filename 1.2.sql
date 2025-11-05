@@ -1,2 +1,3 @@
-select trackid , "name" , duration from tracks
-where duration >= 3.5;
+SELECT name, duration 
+FROM Tracks 
+WHERE duration >= 210;
